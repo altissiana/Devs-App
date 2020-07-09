@@ -9,13 +9,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+// MARK - CARD
+    
     var body: some View {
-        Text("Hello, World!")
+        CardView()
     }
 }
+
+// MARK - PREVIEW
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        .previewDevice("iPhone 11 Pro")
     }
 }
