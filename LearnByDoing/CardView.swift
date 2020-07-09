@@ -32,6 +32,15 @@ struct CardView: View {
                     .italic()
             }
             .offset(y: -218)
+            Button(action: {
+                print("Button was tapped.")
+            }) {
+                Text("Learn".uppercased())
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color.white)
+                    .accentColor(Color.white)
+            }
+            .offset(y: 210)
         }
         .frame(width: 335, height: 545)
         .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: .top, endPoint: .bottom))
